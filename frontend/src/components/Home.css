@@ -1,0 +1,137 @@
+/* Home.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #e0f7fa;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #2575fc;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons .sign-up,
+.nav-buttons .sign-in {
+  border: 1px solid #2575fc;
+  border-radius: 50px; /* Changed from 20px to 50px for smoother edges */
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-buttons .sign-up {
+  background: #fff;
+  color: #2575fc;
+}
+
+.nav-buttons .sign-up:hover {
+  background: #2575fc;
+  color: #fff;
+}
+
+.nav-buttons .sign-in {
+  background: #2575fc;
+  color: #fff;
+}
+
+.nav-buttons .sign-in:hover {
+  background: #fff;
+  color: #2575fc;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-text {
+  max-width: 600px;
+}
+
+.banner-text h1 {
+  font-size: 3em;
+  color: #333;
+}
+
+.banner-text h1 span {
+  color: #2575fc;
+}
+
+.banner-text p {
+  margin-top: 20px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.banner-text .learn-more {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #2575fc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.banner-text .learn-more:hover {
+  background: #6a11cb;
+}
+
+.banner-image {
+  max-width: 500px;
+}
+
+.banner-image img {
+  width: 100%;
+  border-radius: 10px;
+}
