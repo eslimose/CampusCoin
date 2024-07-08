@@ -87,9 +87,9 @@ CampusCoin aims to empower students with the knowledge and skills they need to m
 4. **Environment Variables**
    Create a .env file in the backend directory and add the following:
 
-   JWT_SECRET=1f16c1a9346cddaa758861ac2eaf0c5657b4657f46b54add213a6cf949aca4da
-    EMAIL_USER=campuscoinltd@gmail.com
-    EMAIL_PASS=mpdyovsznraqtlyo
+- JWT_SECRET=1f16c1a9346cddaa758861ac2eaf0c5657b4657f46b54add213a6cf949aca4da
+    - EMAIL_USER=campuscoinltd@gmail.com
+    - EMAIL_PASS=mpdyovsznraqtlyo
 
  ## Usage Instrunctions
 
@@ -115,15 +115,15 @@ CampusCoin aims to empower students with the knowledge and skills they need to m
 
 
 ### Examples
-**1.Sign Up**
+1. **Sign Up**
     -Navigate to 'frontend\src\components\Signup.js' and create a new account.
-**2.Login**
+2. **Login**
     -Navigate to 'frontend\src\components\Login.js' and log in with your credentials.
-**3.Profile Management**
+3. **Profile Management**
     -Navigate to 'frontend\src\components\ProfilePage.js'
     -Upload and update profile pictures on the profile page.
     -View and edit personal information.
-**4.Admin Dashboard**
+4. **Admin Dashboard**
     -Access the admin dashboard to manage users at 'frontend\src\components\Admin.js'.
 
 5. **Logout:**
@@ -131,9 +131,11 @@ CampusCoin aims to empower students with the knowledge and skills they need to m
 
 ### Input/Output
 **Sign Up**
+
     -*Input*: User credentials (email, password, etc.)
     -*Output*: JWT token, user profile details
 **Profile Picture Upload**
+
     -*Input*: Image file
     -*Output*: URL of the uploaded image
 
@@ -144,12 +146,14 @@ The project is divided into two main parts: the backend and the frontend.
 
 ### Key Files
 -**Backend**
+
     'server.js':Entry point for the backend server.
     'routes/': Contains route handlers for authentication, user management, etc.
     'models/': Contains Mongoose models for user data.
     'middleware/':Contains middleware for authentication and authorization.
 
 **FrontEnd**
+
     'src/components/': Contains React components for various pages and features.
     'src/App.js': Main application component where routes are defined.
     'src/index.js': Entry point for the frontend application.
