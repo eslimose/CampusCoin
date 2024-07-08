@@ -7,6 +7,9 @@ import Activate from './components/Activate';
 import ForgotPassword from './components/ForgotPassword';
 import ResetPassword from './components/ResetPassword';
 import Dashboard from './components/Dashboard'; // Make sure this import is here
+import FinancialData from './components/FinancialData'; // Ensure FinancialData is imported
+import ProfilePage from './components/ProfilePage'; // Update this path
+
 
 const App = () => {
   return (
@@ -19,6 +22,8 @@ const App = () => {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password/:token" element={<ResetPassword />} />
         <Route path="/dashboard" element={<Dashboard />} /> {/* Add this route */}
+        <Route path="/financial-data" element={<FinancialData />} /> {/* Add this line */}
+        <Route path="/profile" element={<ProfilePage />} /> {/* Add this route */}
       </Routes>
     </Router>
   );

@@ -8,6 +8,7 @@ const Dashboard = () => {
   const [username, setUsername] = useState('');
   const [financialData, setFinancialData] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [profilePhoto, setProfilePhoto] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -17,6 +18,19 @@ const Dashboard = () => {
     } else {
       navigate('/login');
     }
+
+    // Fetch user profile data
+    axios.get('http://localhost:3000/api/upload/profile', {
+      headers: {
+        'x-auth-token': localStorage.getItem('token'),
+      },
+    })
+    .then(response => {
+      setProfilePhoto(response.data.profilePhoto);
+    })
+    .catch(error => {
+      console.error('Error fetching user data:', error);
+    });
 
     // Fetch financial data
     axios.get('http://localhost:3000/api/financial-data', {
@@ -155,6 +169,9 @@ const Dashboard = () => {
         <div className="logo">Campus Coin</div>
         <div className="user-info">
           Welcome, {username}
+          <Link to="/profile">
+            <img src={profilePhoto || 'default-profile.png'} alt="Profile" className="profile-icon" />
+          </Link>
           <button onClick={handleLogout} className="logout-button">Logout</button>
         </div>
       </header>

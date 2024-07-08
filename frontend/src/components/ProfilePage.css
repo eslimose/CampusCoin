@@ -1,0 +1,94 @@
+.profile-page {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  color: #212529;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.profile-photo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4CAF50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo-section input[type="file"] {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.profile-photo-section button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.profile-photo-section button:hover {
+  background-color: #45a049;
+}
+
+.user-details {
+  flex: 1;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-detail {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.user-detail label {
+  font-weight: bold;
+  margin-right: 10px;
+  width: 150px;
+}
+
+.user-detail input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #e9ecef;
+  color: #495057;
+}

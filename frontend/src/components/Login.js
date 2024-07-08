@@ -19,17 +19,20 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    
+    const userCredentials = {
+      email,
+      password
+    };
+
     try {
-      const response = await axios.post('/api/auth/login', { email, password });
-      if (response.data.success) {
-        localStorage.setItem('token', response.data.token);
-        localStorage.setItem('username', response.data.username); // Store username if needed
-        navigate('/Dashboard'); // Redirect to dashboard
-      } else {
-        setMessage(response.data.message);
-      }
+      const response = await axios.post('http://localhost:3000/api/auth/login', userCredentials);
+      localStorage.setItem('token', response.data.token);
+      localStorage.setItem('username', response.data.user.username);
+      navigate('/dashboard'); // Redirect to dashboard upon successful login
     } catch (error) {
-      setMessage('An error occurred. Please try again.');
+      setMessage('Login failed. Please check your credentials and try again.');
+      console.error('Login error:', error);
     }
   };
 
