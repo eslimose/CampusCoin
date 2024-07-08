@@ -162,34 +162,35 @@ The project is divided into two main parts: the backend and the frontend.
 **Folder Structure**
 
 CampusCoin/
-├── backend/
-│   ├── config/
-│   │   └── db.js
-│   ├── middleware/
-│   │   ├── adminMiddleware.js
-│   │   └── authMiddleware.js
-│   ├── models/
-│   │   └── User.js
-│   ├── routes/
-│   │   ├── admin.js
-│   │   ├── auth.js
-│   │   └── upload.js
-│   ├── .env
-│   ├── server.js
-│   └── package.json
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Admin.js
-│   │   │   ├── Login.js
-│   │   │   ├── ProfilePage.js
-│   │   │   └── ...
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   ├── ...
-│   ├── package.json
-└── README.md
+
+ ├── backend/
+ │   ├── config/
+ │   │   └── db.js
+ │   ├── middleware/
+ │   │   ├── adminMiddleware.js
+ │   │   └── authMiddleware.js
+ │   ├── models/
+ │   │   └── User.js
+ │   ├── routes/
+ │   │   ├── admin.js
+ │   │   ├── auth.js
+ │   │   └── upload.js 
+ │   ├── .env
+ │   ├── server.js
+ │   └── package.json
+ ├── frontend/
+ │   ├── public/
+ │   ├── src/
+ │   │   ├── components/
+ │   │   │   ├── Admin.js
+ │   │   │   ├── Login.js
+ │   │   │   ├── ProfilePage.js
+ │   │   │   └── ...
+ │   │   ├── App.js
+ │   │   ├── index.js
+ │   │   ├── ...
+ │   ├── package.json
+ └── README.md
 
 
 
@@ -205,6 +206,7 @@ CampusCoin/
 ## Additional Sections
 ### Team Members
 -**Solovea Mutei**(Project Lead)
+
 -**Esli Mose**
 
 ### Project Status
