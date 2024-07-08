@@ -39,8 +39,7 @@ const FinancialData = () => {
       <h2>Enter Financial Data</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          Amount: 
-          <input
+          Amount: <input
             type="number"
             name="amount"
             value={formData.amount}
