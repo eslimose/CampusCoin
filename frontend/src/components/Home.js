@@ -20,12 +20,13 @@ const Home = () => {
       </header>
       <div className="banner">
         <div className="banner-text">
-          <h1>FINANCIAL <span>MANAGEMENT</span></h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h1>CAMPUS <span>COIN</span></h1>
+          <p>
+          Welcome to Campus Coin – Your Personal Finance Coach! Manage your money smarter with our easy-to-use app tailored for university students. From budgeting and saving to tracking expenses and managing debt, Campus Coin empowers you to take control of your financial future. Start your journey towards financial independence today!</p>
           <a href="#learn-more" className="learn-more">Learn More</a>
         </div>
         <div className="banner-image">
-          <img src="/public/bckground.jpeg" alt="Financial Management Illustration" />
+          <img src="frontend\public\bckground.jpeg" alt="" />
         </div>
       </div>
     </div>

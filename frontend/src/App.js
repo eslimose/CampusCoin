@@ -9,12 +9,14 @@ import ResetPassword from './components/ResetPassword';
 import Dashboard from './components/Dashboard'; // Make sure this import is here
 import FinancialData from './components/FinancialData'; // Ensure FinancialData is imported
 import ProfilePage from './components/ProfilePage'; // Update this path
+import Admin from './components/Admin'; // Add this line
 
 
 const App = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/admin" element={<Admin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />

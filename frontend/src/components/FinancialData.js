@@ -4,7 +4,6 @@ import './FinancialData.css';
 
 const FinancialData = () => {
   const [formData, setFormData] = useState({
-    category: '',
     amount: '',
     date: '',
     type: 'expense', // expense or income
@@ -40,16 +39,8 @@ const FinancialData = () => {
       <h2>Enter Financial Data</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          Category:<input
-            type="text"
-            name="category"
-            value={formData.category}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <label>
-          Amount: <input
+          Amount: 
+          <input
             type="number"
             name="amount"
             value={formData.amount}
@@ -58,7 +49,8 @@ const FinancialData = () => {
           />
         </label>
         <label>
-          Date: <input
+          Date: 
+          <input
             type="date"
             name="date"
             value={formData.date}
@@ -67,7 +59,8 @@ const FinancialData = () => {
           />
         </label>
         <label>
-          Type:<select
+          Type:
+          <select
             name="type"
             value={formData.type}
             onChange={handleChange}
@@ -78,7 +71,8 @@ const FinancialData = () => {
           </select>
         </label>
         <label>
-          Budget Goal:<input
+          Budget Goal:
+          <input
             type="number"
             name="budget"
             value={formData.budget}
@@ -86,7 +80,8 @@ const FinancialData = () => {
           />
         </label>
         <label>
-          Debt:<input
+          Debt:
+          <input
             type="number"
             name="debt"
             value={formData.debt}

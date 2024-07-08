@@ -22,6 +22,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/upload', uploadRoutes); // Ensure this line is correct
 app.use('/api/financial-data', financialDataRoutes);
+app.use('/api/admin', adminRoutes); // Add this line
 
 // Static folder for uploaded images
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));

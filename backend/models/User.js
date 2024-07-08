@@ -34,6 +34,10 @@ const UserSchema = new mongoose.Schema({
   profilePhoto: {
     type: String,
     default: '',
+  },
+  isAdmin: {
+    type: Boolean,
+    default: false // Ensure this is set to true for the admin user
   }
 });
 
