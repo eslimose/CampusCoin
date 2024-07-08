@@ -23,8 +23,12 @@ const FinancialData = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('/api/financial-data', formData);
-      alert('Financial data saved successfully!');
+      const response = await axios.post('/api/financial-data', formData);
+      if (response.data.success) {
+        alert('Financial data saved successfully!');
+      } else {
+        alert('An error occurred. Please try again.');
+      }
     } catch (error) {
       console.error('Error saving financial data:', error);
       alert('An error occurred. Please try again.');
@@ -36,8 +40,7 @@ const FinancialData = () => {
       <h2>Enter Financial Data</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          Category:
-          <input
+          Category:<input
             type="text"
             name="category"
             value={formData.category}
@@ -46,8 +49,7 @@ const FinancialData = () => {
           />
         </label>
         <label>
-          Amount:
-          <input
+          Amount: <input
             type="number"
             name="amount"
             value={formData.amount}
@@ -56,8 +58,7 @@ const FinancialData = () => {
           />
         </label>
         <label>
-          Date:
-          <input
+          Date: <input
             type="date"
             name="date"
             value={formData.date}
@@ -66,8 +67,7 @@ const FinancialData = () => {
           />
         </label>
         <label>
-          Type:
-          <select
+          Type:<select
             name="type"
             value={formData.type}
             onChange={handleChange}
@@ -78,8 +78,7 @@ const FinancialData = () => {
           </select>
         </label>
         <label>
-          Budget Goal:
-          <input
+          Budget Goal:<input
             type="number"
             name="budget"
             value={formData.budget}
@@ -87,8 +86,7 @@ const FinancialData = () => {
           />
         </label>
         <label>
-          Debt:
-          <input
+          Debt:<input
             type="number"
             name="debt"
             value={formData.debt}

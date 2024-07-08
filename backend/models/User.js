@@ -30,6 +30,10 @@ const UserSchema = new mongoose.Schema({
   resetToken: {
     type: String,
     default: ''
+  },
+  profilePhoto: {
+    type: String,
+    default: '',
   }
 });
 

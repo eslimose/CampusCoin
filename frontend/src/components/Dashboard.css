@@ -39,6 +39,15 @@ body {
   align-items: center;
 }
 
+.profile-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
 .logout-button {
   margin-left: 20px;
   padding: 10px 20px;
@@ -67,6 +76,7 @@ body {
 
 .card h3 {
   margin-top: 0;
+  color:black;
 }
 
 .modal {
