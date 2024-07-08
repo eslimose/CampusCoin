@@ -5,26 +5,28 @@ CampusCoin is a financial literacy app designed to help university students mana
 
 ## Introduction
 In today's fast-paced world, managing finances is a crucial skill, especially for university students who are often managing their own money for the first time. CampusCoin is designed to address this need by providing an easy-to-use platform that combines educational resources with practical tools for financial management. With CampusCoin, students can:
+
     -Track their spending and categorize expenses.
     -Set and achieve financial goals.
     -Learn about budgeting, saving, and investing through interactive tutorials.
     -Receive personalized financial advice and tips.
     -Engage with a community of peers to share financial strategies and experiences.
+    
 CampusCoin aims to empower students with the knowledge and skills they need to make informed financial decisions, ultimately leading to better financial health and stability.
 
 
 # Table of Contents
 
--[Features](#Features)
--[Technologies Used](#Technologies_Used)
--[Getting Started](#Getting_Started)
--[Usage Instructions](#Usage_Instructions)
--[Project Structure](#Project_Structure)
--[API Endpoints](#API_Endpoints)
--[Additional Sections](#Additional_Sections)
--[Contributing](#Contributing)
--[License](#License)
--[Acknowledgment](#Acknowledgement)
+- [Features](#Features)
+- [Technologies Used](#Technologies_Used)
+- [Getting Started](#Getting_Started)
+- [Usage Instructions](#Usage_Instructions)
+- [Project Structure](#Project_Structure)
+- [API Endpoints](#API_Endpoints)
+- [Additional Sections](#Additional_Sections)
+- [Contributing](#Contributing)
+- [License](#License)
+- [Acknowledgment](#Acknowledgement)
 
 ## Features
 
