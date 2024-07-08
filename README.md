@@ -161,6 +161,7 @@ The project is divided into two main parts: the backend and the frontend.
 
 **Folder Structure**
 
+'''plaintext
 CampusCoin/
 
  ├── backend/
