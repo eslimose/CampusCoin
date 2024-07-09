@@ -168,17 +168,17 @@ CampusCoin/
 │   │   └── db.js                 # Database connection configuration
 │   ├── controllers/              # Controllers to handle business logic
 │   │   ├── authController.js     # Handles authentication logic
-│   │   ├── productController.js  # Handles product-related logic
+│   │   ├── adminController.js    # Handles admin-related logic
 │   │   └── ...                   # Other controllers as needed
 │   ├── middleware/               # Middleware for handling requests
-│   │   └── authMiddleware.js     # Middleware for authentication
+│   │   ├── authMiddleware.js     # Middleware for authentication
+│   │   ├── adminMiddleware.js    # Middleware for admin authorization
+│   │   └── ...                   # Other middleware as needed
 │   ├── models/                   # Database models
-│   │   ├── User.js               # User model schema
-│   │   ├── Product.js            # Product model schema
-│   │   └── Order.js              # Order model schema
+│   │   └── User.js               # User model schema
 │   ├── routes/                   # Route handlers
 │   │   ├── auth.js               # Authentication routes
-│   │   ├── userRoutes.js         # User-related routes
+│   │   ├── admin.js              # Admin-related routes
 │   │   └── ...                   # Other routes as needed
 │   ├── uploads/                  # Directory for uploaded files
 │   ├── .env                      # Environment variables
@@ -189,13 +189,19 @@ CampusCoin/
 │   │   └── index.html            # Main HTML file
 │   ├── src/                      # Source files for the frontend
 │   │   ├── components/           # React components
-│   │   │   ├── AccountSettings.js # Component for account settings
+│   │   │   ├── ProfilePage.js    # Component for the profile page
 │   │   │   ├── Login.js          # Component for login
+│   │   │   ├── Admin.js          # Component for admin dashboard
 │   │   │   └── ...               # Other components as needed
+│   │   ├── css/                  # CSS files for styling
+│   │   │   ├── ProfilePage.css   # CSS for the profile page
+│   │   │   └── ...               # Other CSS files as needed
 │   │   ├── App.js                # Main App component
 │   │   └── index.js              # Entry point for the React application
 │   ├── .env                      # Environment variables
 │   └── package.json              # Frontend dependencies and scripts
+└── README.md                     # Documentation for the project
+
 
 ```
 
