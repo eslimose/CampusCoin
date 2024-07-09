@@ -163,35 +163,40 @@ The project is divided into two main parts: the backend and the frontend.
 
 ```plaintext
 CampusCoin/
+├── backend/                      # Backend directory containing server-side code
+│   ├── config/                   # Configuration files
+│   │   └── db.js                 # Database connection configuration
+│   ├── controllers/              # Controllers to handle business logic
+│   │   ├── authController.js     # Handles authentication logic
+│   │   ├── productController.js  # Handles product-related logic
+│   │   └── ...                   # Other controllers as needed
+│   ├── middleware/               # Middleware for handling requests
+│   │   └── authMiddleware.js     # Middleware for authentication
+│   ├── models/                   # Database models
+│   │   ├── User.js               # User model schema
+│   │   ├── Product.js            # Product model schema
+│   │   └── Order.js              # Order model schema
+│   ├── routes/                   # Route handlers
+│   │   ├── auth.js               # Authentication routes
+│   │   ├── userRoutes.js         # User-related routes
+│   │   └── ...                   # Other routes as needed
+│   ├── uploads/                  # Directory for uploaded files
+│   ├── .env                      # Environment variables
+│   ├── index.js                  # Entry point for the backend server
+│   └── package.json              # Backend dependencies and scripts
+├── frontend/                     # Frontend directory containing client-side code
+│   ├── public/                   # Publicly accessible files
+│   │   └── index.html            # Main HTML file
+│   ├── src/                      # Source files for the frontend
+│   │   ├── components/           # React components
+│   │   │   ├── AccountSettings.js # Component for account settings
+│   │   │   ├── Login.js          # Component for login
+│   │   │   └── ...               # Other components as needed
+│   │   ├── App.js                # Main App component
+│   │   └── index.js              # Entry point for the React application
+│   ├── .env                      # Environment variables
+│   └── package.json              # Frontend dependencies and scripts
 
- ├── backend/
- │   ├── config/
- │   │   └── db.js
- │   ├── middleware/
- │   │   ├── adminMiddleware.js
- │   │   └── authMiddleware.js
- │   ├── models/
- │   │   └── User.js
- │   ├── routes/
- │   │   ├── admin.js
- │   │   ├── auth.js
- │   │   └── upload.js 
- │   ├── .env
- │   ├── server.js
- │   └── package.json
- ├── frontend/
- │   ├── public/
- │   ├── src/
- │   │   ├── components/
- │   │   │   ├── Admin.js
- │   │   │   ├── Login.js
- │   │   │   ├── ProfilePage.js
- │   │   │   └── ...
- │   │   ├── App.js
- │   │   ├── index.js
- │   │   ├── ...
- │   ├── package.json
- └── README.md
 ```
 
 
