@@ -1,27 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const authMiddleware = require('../middleware/authMiddleware');
-const adminMiddleware = require('../middleware/adminMiddleware'); // Ensure you create this middleware
-const User = require('../models/User');
+const adminMiddleware = require('../middleware/adminMiddleware');
+const adminController = require('../controllers/adminController');
 
 // Fetch all users
-router.get('/users', [authMiddleware, adminMiddleware], async (req, res) => {
-  try {
-    const users = await User.find({});
-    res.json(users);
-  } catch (error) {
-    res.status(500).send('Server Error');
-  }
-});
+router.get('/users', [authMiddleware, adminMiddleware], adminController.getUsers);
 
 // Delete a user
-router.delete('/users/:id', [authMiddleware, adminMiddleware], async (req, res) => {
-  try {
-    await User.findByIdAndDelete(req.params.id);
-    res.json({ msg: 'User deleted' });
-  } catch (error) {
-    res.status(500).send('Server Error');
-  }
-});
+router.delete('/users/:id', [authMiddleware, adminMiddleware], adminController.deleteUser);
 
 module.exports = router;

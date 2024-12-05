@@ -5,7 +5,9 @@ const Home = () => {
   return (
     <div className="container">
       <header>
-        <div className="logo">Your Logo</div>
+        <div className="logo">
+        <img src="frontend\public\Coinlogo1.png" alt="COINLOGO" />
+        </div>
         <nav>
           <a href="#home">Home</a>
           <a href="#about">About</a>

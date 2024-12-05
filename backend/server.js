@@ -4,6 +4,7 @@ const connectDB = require('./config/db');
 const authRoutes = require('./routes/auth');
 const uploadRoutes = require('./routes/upload');
 const financialDataRoutes = require('./routes/financialData');
+const adminRoutes = require('./routes/admin'); // Add this line
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
